@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating and Review Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="keywords" content="Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="/assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="/assets/css/login_overlay.css" rel='stylesheet' type='text/css' />
+    <link href="/assets/css/style6.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="/assets/css/shop.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/checkout.css">
+    <link href="/assets/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+    <link href="/assets/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/assets/css/fontawesome-all.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link
+        href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #fafafa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .range__slider {
+            width: 50%;
+        }
+        .range__value {
+            width: 20%;
+            margin-left: 20px;
+            text-align: center;
+            border-left: 1px solid #ccc;
+            padding-left: 20px;
+        }
+        .btn-submit {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-top container-fluid" id="home">
+        <!-- header -->
+        <header>
+            <div class="row">
+                <div class="col-md-3 top-info text-left mt-lg-4">
+                    <h6>Need Help</h6>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i> Call
+                        </li>
+                        <li class="number-phone mt-3">12345678099</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 logo-w3layouts text-center">
+                    <h1 class="logo-w3layouts">
+                        <a class="navbar-brand" href="index.html">
+                            Quix </a>
+                    </h1>
+                </div>
+
+                <div class="col-md-3 top-info-cart text-right mt-lg-4">
+                    <ul class="cart-inner-info">
+                        <li class="button-log">
+                            <a class="btn-open" href="/userProfile">
+                                <span class="fa fa-user" aria-hidden="true"></span>
+                            </a>
+                        </li>
+                        <li class="galssescart galssescart2 cart cart box_1">
+                            <form action="/loadCart" class="last">
+
+                                <button class="top_googles_cart" type="submit" name="submit" value="">
+                                    My Cart
+                                    <i class="fas fa-cart-arrow-down"></i>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <div class="search">
+                        <div class="">
+                            <button id="trigger-overlay" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <!-- open/close -->
+                        <div class="overlay overlay-door">
+                            <button type="button" class="overlay-close">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                            <form action="#" method="post" class="d-flex">
+                                <input class="form-control" type="search" placeholder="Search here..." required="">
+                                <button type="submit" class="btn btn-primary submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+
+                        </div>
+                        <!-- open/close -->
+                    </div>
+                    <!---->
+                    <div class="overlay-login text-left">
+                        <button type="button" class="overlay-close1">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <div class="wrap">
+                            <h5 class="text-center mb-4">Login Now</h5>
+                            <div class="login p-5 bg-dark mx-auto mw-100">
+                                <form action="#" method="post">
+                                    <div class="form-group">
+                                        <label class="mb-2">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="" required="">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="mb-2">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1"
+                                            placeholder="" required="">
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+
+                                </form>
+                            </div>
+                            <!---->
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+
+            <label class="top-log mx-auto"></label>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+
+                    </span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-mega mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link ml-lg-0" href="/home">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/features" id="" role="button" aria-expanded="false">
+                                Features
+                            </a>
+
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link " href="/products" id="" role="button">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+        </header>
+        <!-- banner -->
+        <div class="banner_inner">
+            <div class="services-breadcrumb">
+                <div class="inner_breadcrumb">
+
+                    <ul class="short">
+                        <li>
+                            <a href="/home">Home</a>
+                            <i>|</i>
+                        </li>
+                        <li>add review </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!--//banner -->
+    </div>
+
+    <div class="container">
+       
+        <form class="range" action="/addReview" method="post">
+            <div class="row">
+                <div class="col-md-2" style="margin-top: 25px;">
+                    <div class="form-group range__slider">
+                        <input name="rating" type="range" step="1" min="1" max="5">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-group range__value">
+                        <label>Rating:</label>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="reviewText">Review:</label>
+                        <textarea class="form-control" id="reviewText" name="reviewText" rows="4"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="hidden" name="productId" value="<%= productId %>">
+                    <input type="hidden" name="orderId" value="<%= orderId %>">
+                    <button type="submit" class="btn btn-danger btn-submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--// header_top -->
+    <!--checkout-->
+    <section style="background-color: #eee;" class="">
+        <div class="container">
+            <div class="row justify-content-center">
+                
+            </div>
+        </div>
+    </section>
+    <!--//checkout-->
+    <!--footer -->
+    <footer class="py-lg-5 py-3">
+        <div class="container-fluid px-lg-5 px-3">
+            <div class="row footer-top-w3layouts">
+                <div class=" footer-grid-w3ls">
+                    <div class="footer-title">
+                        <h3>About Us</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+                            consectetur sed, convallis at
+                            tellus. Nulla porttitor accumsana tincidunt.</p>
+                        <ul class="footer-social text-left mt-lg-4 mt-3">
+
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fab fa-facebook-f"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fab fa-twitter"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fab fa-google-plus-g"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fab fa-linkedin-in"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fas fa-rss"></span>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a href="#">
+                                    <span class="fab fa-vk"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" footer-grid-w3ls">
+                    <div class="footer-title">
+                        <h3>Get in touch</h3>
+                    </div>
+                    <div class="contact-info">
+                        <h4>Location :</h4>
+                        <p>0926k 4th block building, king Avenue, New York City.</p>
+                        <div class="phone">
+                            <h4>Contact :</h4>
+                            <p>Phone : +121 098 8907 9987</p>
+                            <p>Email :
+                                <a href="mailto:info@example.com">info@example.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer-grid-w3ls">
+                    <div class="footer-title">
+                        <h3>Quick Links</h3>
+                    </div>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="404.html">Error</a>
+                        </li>
+                        <li>
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 footer-grid-w3ls">
+                    <div class="footer-title">
+                        <h3>Sign up for your offers</h3>
+                    </div>
+                    <div class="footer-text">
+                        <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                        <form action="#" method="post">
+                            <input class="form-control" type="email" name="Email" placeholder="Enter your email..."
+                                required="">
+                            <button class="btn1">
+                                <i class="far fa-envelope" aria-hidden="true"></i>
+                            </button>
+                            <div class="clearfix"> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-w3layouts mt-4">
+
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!--jQuery-->
+
+    <!-- newsletter modal -->
+    <!--search jQuery-->
+    <script src="/assets/js/modernizr-2.6.2.min.js"></script>
+    <script src="/assets/js/classie-search.js"></script>
+    <script src="/assets/js/demo1-search.js"></script>
+    <!--//search jQuery-->
+    <!-- cart-js -->
+    <script src="/assets/js/minicart.js"></script>
+
+    <!-- //cart-js -->
+
+    <!-- carousel -->
+    <!-- easy-responsive-tabs -->
+    <script src="/assets/js/easy-responsive-tabs.js"></script>
+
+
+    <!--//close-->
+
+
+    <!-- //dropdown nav -->
+    <script src="/assets/js/move-top.js"></script>
+    <script src="/assets/js/easing.js"></script>
+
+
+    <!--// end-smoth-scrolling -->
+
+
+    <script src="/assets/js/bootstrap.js"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        class Slider {
+            constructor(rangeElement, valueElement) {
+                this.rangeElement = rangeElement;
+                this.valueElement = valueElement;
+
+                // Attach a listener to "input" event
+                this.rangeElement.addEventListener('input', this.updateSlider.bind(this));
+            }
+
+            // Initialize the slider
+            init() {
+                this.updateSlider();
+            }
+
+            updateSlider() {
+                let rating = this.rangeElement.value;
+                this.valueElement.innerHTML = rating;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let rangeElement = document.querySelector('.range [type="range"]');
+            let valueElement = document.querySelector('.range .range__value span');
+
+            if (rangeElement) {
+                let slider = new Slider(rangeElement, valueElement);
+                slider.init();
+            }
+        });
+    </script>
+</body>
+
+</html>

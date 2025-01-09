@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/signup.css" />
+    <style>
+      /* Add your existing styles here */
+      .message-container {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+
+      .message-container.success {
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="text">Signup</div>
+
+      <div id="messageContainer" class="message-container">
+        <% if (typeof errorMessage !=='undefined' ) { %>
+        <p><%= errorMessage %></p>
+        <% } %> <% if (typeof message !=='undefined' ) { %>
+        <p><%= message %></p>
+        <% } %>
+      </div>
+
+      <form
+        action="/register"
+        method="POST"
+        id="signupForm"
+        onsubmit="return validateForm()"
+      >
+        <div class="field">
+          <input type="text" id="name" name="name" required />
+          <span class="fas fa-user"></span>
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" required />
+          <span class="fas fa-envelope"></span>
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <input type="tel" id="phone" name="phone" required />
+          <span class="fas fa-phone"></span>
+          <label for="phone">Phone</label>
+        </div>
+        <div class="field">
+          <input type="password" id="password" name="password" required />
+          <span class="fas fa-lock"></span>
+          <label for="password">Password</label>
+        </div>
+        <% if(referralCode) { %>
+        <input type="hidden" name="referralCode" value="<%= referralCode %>" />
+        <% } %>
+        <button type="submit">Sign up</button>
+        <div class="sign-up">
+          Already a member? <a href="/login">Login now</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function validateForm() {
+        // Reset previous error messages
+        document.getElementById("messageContainer").innerHTML = "";
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const password = document.getElementById("password").value;
+
+        // Minimum length is 3 characters, and should only contain alphabets
+        if (
+          name.length < 3 ||
+          /^\s+$/.test(name) ||
+          !/^[a-zA-Z\s]+$/.test(name)
+        ) {
+          displayErrorMessage(
+            "Name must be at least 3 characters, should not be only spaces, and should only contain alphabets"
+          );
+          return false;
+        }
+
+        // simple email format check   =    for mail
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          displayErrorMessage("Invalid email address");
+          return false;
+        }
+
+        // Validate phone number  ,it willl reject if only contain zeros
+        if (!/^\d{10}$/.test(phone) || /^0+$/.test(phone)) {
+          displayErrorMessage(
+            "Invalid phone number (must be 10 digits and should not consist only of 0s)"
+          );
+          return false;
+        }
+
+        // Validate password : minimum length is 6 characters
+        if (
+          password.length < 6 ||
+          !/[a-zA-Z]/.test(password) ||
+          !/[^\w]/.test(password)
+        ) {
+          displayErrorMessage(
+            "Password must be at least 6 characters and contain at least one letter and one character"
+          );
+          return false;
+        }
+
+        // If all validations pass, the form will be submitted
+        return true;
+      }
+
+      function displayErrorMessage(message) {
+        const messageContainer = document.getElementById("messageContainer");
+        messageContainer.innerHTML = `<p>${message}</p>`;
+      }
+    </script>
+  </body>
+</html>

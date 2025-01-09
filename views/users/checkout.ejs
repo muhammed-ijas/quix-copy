@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Goggles Ecommerce Category Bootstrap responsive Web Template | Checkout :: w3layouts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Goggles a Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<link href="assets/css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/login_overlay.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/style6.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="assets/css/shop.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/checkout.css">
+	<link href="assets/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/style.css" rel='stylesheet' type='text/css' />
+	<link href="assets/css/fontawesome-all.css" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+	<link
+		href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800"
+		rel="stylesheet">
+
+
+
+	<style>
+		.input-field {
+			width: 100%;
+			max-width: 300px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-sizing: border-box;
+			/* Include padding and border in width calculation */
+			font-size: 16px;
+			margin: 0 auto;
+		}
+
+		.addAddressButton {
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			outline: none;
+			border: none;
+			width: 100px;
+			height: 30px;
+		}
+
+		.form-check-button1 {
+			background-color: white;
+			color: black;
+			outline: none;
+			border: none;
+		}
+
+		.form-check-button2 {
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			outline: none;
+			border: none;
+		}
+
+		.form-check-option1 {
+			margin-top: 20px;
+		}
+
+		.form-check-option2 {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+
+		.modal-header {
+			background-color: black;
+
+		}
+
+		.modal-title {
+			border-width: 500px;
+			background-color: black;
+			color: white;
+		}
+
+		.addressSelectionDiv {
+			margin-top: 10px;
+		}
+
+		.addressSelection {
+			background-color: black;
+			color: white;
+			width: 100px;
+			height: 30px;
+			outline: none;
+			border: none;
+		}
+
+		.selectAddressLabel {
+			margin-right: 8px;
+		}
+
+		.chooseAddress {
+			margin-top: 15px;
+			font-weight: bold;
+		}
+
+		.addressRadioButton {
+			text-align: center;
+		}
+
+		.choosePaymentHead {
+			margin-top: 30px;
+		}
+
+		.radioButtons {
+			margin-bottom: 50px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div class="banner-top container-fluid" id="home">
+		<!-- header -->
+		<header>
+			<div class="row">
+				<div class="col-md-3 top-info text-left mt-lg-4">
+					<h6>Need Help</h6>
+					<ul>
+						<li>
+							<i class="fas fa-phone"></i> Call
+						</li>
+						<li class="number-phone mt-3">12345678099</li>
+					</ul>
+				</div>
+				<div class="col-md-6 logo-w3layouts text-center">
+					<h1 class="logo-w3layouts">
+						<a class="navbar-brand" href="index.html">
+							Quix </a>
+					</h1>
+				</div>
+
+				<div class="col-md-3 top-info-cart text-right mt-lg-4">
+					<ul class="cart-inner-info">
+						<li class="">
+							<a class="btn-open" href="/userProfile">
+								<span class="fa fa-user"></span>
+							</a>
+						</li>
+						<li class="galssescart galssescart2 cart cart box_1">
+							<form action="/loadCart" class="last">
+
+								<button class="top_googles_cart" type="submit" name="submit" value="">
+									My Cart
+									<i class="fas fa-cart-arrow-down"></i>
+								</button>
+							</form>
+						</li>
+					</ul>
+
+
+					<div class="overlay-login text-left">
+						<button type="button" class="overlay-close1">
+							<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+						<div class="wrap">
+							<h5 class="text-center mb-4">Login Now</h5>
+							<div class="login p-5 bg-dark mx-auto mw-100">
+								<form action="#" method="post">
+									<div class="form-group">
+										<label class="mb-2">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1"
+											aria-describedby="emailHelp" placeholder="" required="">
+										<small id="emailHelp" class="form-text text-muted">We'll never share your email
+											with anyone else.</small>
+									</div>
+									<div class="form-group">
+										<label class="mb-2">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1"
+											placeholder="" required="">
+									</div>
+									<div class="form-check mb-2">
+										<input type="checkbox" class="form-check-input" id="exampleCheck1">
+										<label class="form-check-label" for="exampleCheck1">Check me out</label>
+									</div>
+									<button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+
+								</form>
+							</div>
+							<!---->
+						</div>
+					</div>
+					<!---->
+				</div>
+			</div>
+
+			<label class="top-log mx-auto"></label>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light top-header mb-2">
+
+				<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+
+					</span>
+				</button>
+
+
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-mega mx-auto">
+						<li class="nav-item">
+							<a class="nav-link ml-lg-0" href="/home">Home
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/about">About</a>
+						</li>
+						<li class="nav-item ">
+							<a class="nav-link" href="/features" id="" role="button">
+								Features
+							</a>
+
+						</li>
+						<li class="nav-item  ">
+							<a class="nav-link " href="/products" id="" role="button">
+								Shop
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/contact">Contact</a>
+						</li>
+
+					</ul>
+
+				</div>
+		</header>
+		<!-- banner -->
+		<div class="banner_inner">
+			<div class="services-breadcrumb">
+				<div class="inner_breadcrumb">
+
+					<ul class="short">
+						<li>
+							<a href="/home">Home</a>
+							<i>|</i>
+						</li>
+						<li>Checkout </li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		<!--//banner -->
+	</div>
+	<!--// header_top -->
+	<!--checkout-->
+	<div class="text-center message-div">
+		<% if(typeof message !=='undefined' ){ %>
+			<p class="message" style="color: red;">
+				<%= message %>
+			</p>
+		<% } %>
+		<% if(typeof errorMessage !=='undefined' ){ %>
+			<p class="message" style="color: red;">
+				<%= errorMessage %>
+			</p>
+		<% } %>
+
+	</div>
+	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+		<div class="container">
+			<div class="inner-sec-shop px-lg-4 px-3">
+				<h3 class="tittle-w3layouts my-lg-4 mt-3">Checkout </h3>
+				<div class="checkout-right">
+
+					<table class="timetable_sub">
+						<thead>
+							<tr>
+								<th>SL No.</th>
+								<th>Product</th>
+								<th>Quantity</th>
+								<th>Product Name</th>
+
+								<th>Price</th>
+
+							</tr>
+						</thead>
+						<tbody>
+							<% if(carts.length> 0) { %>
+
+								<% for(let i=0; i < carts.length; i++) { %>
+									<tr class="rem1">
+										<td class="invert">1</td>
+										<td class="invert-image">
+											<a href="">
+												<img src="/uploads/<%= carts[i].productId.images[0] %>" alt=" "
+													class="img-responsive">
+											</a>
+										</td>
+										<td>
+											<%=carts[i].quantity%>
+										</td>
+										<td class="invert">
+											<%= carts[i].productId.productName %>
+										</td>
+
+										<td class="invert">
+											<% if(carts[i].productId.offerName) { %>
+												&#8377;<%= carts[i].productId.offerPrice %>
+													<% } else { %>
+														&#8377;<%= carts[i].productId.prize %>
+															<% } %>
+										</td>
+
+									</tr>
+									<% } %>
+										<% } %>
+
+
+						</tbody>
+					</table>
+				</div>
+
+
+
+
+
+
+
+				<div class="checkout-left row">
+					<div class="checkout-left-basket col-md-6 mx-auto">
+						<h4 class="text-center">Continue to basket</h4>
+						<ul class="list-group">
+							<% if(carts.length> 0) { %>
+								<% let totalprice=0; %>
+									<% for(let i=0; i < carts.length; i++) { %>
+										<% if(carts[i].productId.offerName) { %>
+											<% totalprice=parseInt(carts[i].quantity * carts[i].productId.offerPrice);
+												%>
+												<% } else { %>
+													<% totalprice=parseInt(carts[i].quantity *
+														carts[i].productId.prize); %>
+														<% } %>
+															<li
+																class="list-group-item d-flex justify-content-between align-items-center">
+																Product <%= i+1 %>
+																	<span class="badge badge-primary badge-pill">₹<%=
+																			totalprice %>
+																	</span>
+															</li>
+															<% } %>
+
+																<li
+																	class="list-group-item d-flex justify-content-between align-items-center">
+																	Total
+																	<span class="badge badge-primary badge-pill"
+																		id="total">₹<%=subTotal %></span>
+																</li>
+																<% } %>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="d-flex justify-content-center" style="margin-top: 20px;">
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+					Check if any coupons available
+				</button>
+			</div>
+
+
+
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header  justify-content-center text-align-center text-center">
+							<h5 class="modal-title   justify-content-center text-align-center text-center"
+								id="exampleModalLabel">Copy Code and Paste</h5>
+
+						</div>
+						<div class="modal-body justify-content-center text-align-center text-center">
+
+							<% if(coupons.length> 0) { %>
+								<% for(let i=0 ; i < coupons.length ; i++){ %>
+									<p>
+										<%= coupons[i].couponName %>
+									</p>
+									<h5>
+										<%= coupons[i].couponCode %>
+									</h5>
+									<h6 style="margin-top: 10px;">&#8377;<%= coupons[i].discountAmount %>
+									</h6>
+									<% } %>
+										<% } %>
+
+						</div>
+
+
+
+						<div class="modal-footer">
+							<form action="/checkCouponCode" method="post">
+							<div class="justify-content-center text-align-center text-center">
+								<input type="text" class="input-field" name="couponCode" placeholder="Paste the code">
+								<input type="hidden" value="<%=subTotal %>" name="subTotal">
+							</div>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							
+							<button type="submit" class="btn btn-primary">Add coupon</button>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+
+
+
+
+
+
+
+	<div class="checkout-left-basket col-md-12 mx-auto">
+		<h4 class="text-center">Choose Shipping Address</h4>
+
+	</div>
+
+	<section class="banner-bottom-wthreelayouts py-lg-5 py-3">
+
+		<div class="container">
+
+			<div class="inner-sec-shop px-lg-4 px-3">
+
+
+				<div class="row">
+
+					<% for(let i=0 ; i < address.length ; i++ ){ %>
+						<div class="col-lg-4 mx-auto">
+							<div class="card mb-4 address-column">
+								<div class="card-body">
+									<p class="text-muted mb-1"><strong>Full Name:</strong>
+										<%= address[i].fullName %>
+									</p>
+									<p class="text-muted mb-1"><strong>Mobile:</strong>
+										<%= address[i].mobile %>
+									</p>
+									<p class="text-muted mb-1"><strong>House Name:</strong>
+										<%= address[i].houseName %>
+									</p>
+									<p class="text-muted mb-1"><strong>City:</strong>
+										<%= address[i].city %>
+									</p>
+									<p class="text-muted mb-1"><strong>Pincode:</strong>
+										<%= address[i].pincode %>
+									</p>
+									<p class="text-muted mb-1"><strong>State:</strong>
+										<%= address[i].state %>
+									</p>
+									<p class="text-muted mb-1"><strong>Country:</strong>
+										<%= address[i].country %>
+									</p>
+
+									<div class="text-center addressSelectionDiv">
+										<button class=" addressSelection" data-toggle="modal"
+											data-target="#paymentMethodModal<%= i %>">Select</button>
+									</div>
+								</div>
+								<div class="modal fade" id="paymentMethodModal<%= i %>" tabindex="-1" role="dialog"
+									aria-labelledby="paymentMethodModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div
+												class="modal-header text-center justify-content-center text-align-center">
+												<h5 class="modal-title" id="paymentMethodModalLabel">Choose Payment
+													Method</h5>
+
+											</div>
+											<div class="modal-body text-center">
+												<!-- Add text-center class to center the content -->
+												<!-- Payment method options -->
+												<form action="/confirmation" method="post" id="placeOrderForm">
+													<div class="form-check-option1 ">
+														<input class="form-check-input form-check-radio" type="radio"
+															name="paymentMethod" id="paymentMethodOnline"
+															value="Online Payment">
+														<label class="form-check-label " for="paymentMethodOnline">
+															Online Payment
+														</label>
+													</div>
+													<div class="form-check-option2">
+														<input class="form-check-input form-check-radio" type="radio"
+															name="paymentMethod" id="paymentMethodCOD" value="COD">
+														<label class="form-check-label" for="paymentMethodCOD">
+															Cash On Delivery
+														</label>
+													</div>
+													<div class="form-check-option3">
+														<input class="form-check-input form-check-radio" type="radio"
+															name="paymentMethod" id="paymentMethodWallet"
+															value="Wallet">
+														<label class="form-check-label" for="paymentMethodWallet">
+															Wallet
+														</label>
+													</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="form-check-button1"
+													data-dismiss="modal">Close</button>
+
+
+												<input type="hidden" name="addressId" value="<%= address[i]._id %>">
+												<% if (typeof appliedCouponAmount !== 'undefined') { %>
+													<input type="hidden" value="<%= appliedCouponAmount %>" name="appliedCouponAmount">
+												<% } %>
+												
+												<% if (typeof appliedCouponMinimumSpend !== 'undefined') { %>
+													<input type="hidden" value="<%= appliedCouponMinimumSpend %>" name="appliedCouponMinimumSpend">
+												<% } %>
+												<input type="hidden" value="<%= subTotal %>" name="subTotal">
+
+												<button type="button" class="form-check-button2"
+													onclick="checkPlaceOrder()">Proceed to
+													Confirmation</button>
+												</form>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<% } %>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<div class="justify-content-center text-align-center text-center">
+		<form action="/userAddAddress">
+			<button type="submit" class="addAddressButton">Add Address</button>
+		</form>
+
+	</div>
+	<!--//checkout-->
+	<!--footer -->
+	<footer class="py-lg-5 py-3">
+		<div class="container-fluid px-lg-5 px-3">
+			<div class="row footer-top-w3layouts">
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div>
+					<div class="footer-text">
+						<p>Curabitur non nulla sit amet nislinit tempus convallis quis ac lectus. lac inia eget
+							consectetur sed, convallis at
+							tellus. Nulla porttitor accumsana tincidunt.</p>
+						<ul class="footer-social text-left mt-lg-4 mt-3">
+
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-facebook-f"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-twitter"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-google-plus-g"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-linkedin-in"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fas fa-rss"></span>
+								</a>
+							</li>
+							<li class="mx-2">
+								<a href="#">
+									<span class="fab fa-vk"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Get in touch</h3>
+					</div>
+					<div class="contact-info">
+						<h4>Location :</h4>
+						<p>0926k 4th block building, king Avenue, New York City.</p>
+						<div class="phone">
+							<h4>Contact :</h4>
+							<p>Phone : +121 098 8907 9987</p>
+							<p>Email :
+								<a href="mailto:info@example.com">info@example.com</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Quick Links</h3>
+					</div>
+					<ul class="links">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="404.html">Error</a>
+						</li>
+						<li>
+							<a href="shop.html">Shop</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-3 footer-grid-w3ls">
+					<div class="footer-title">
+						<h3>Sign up for your offers</h3>
+					</div>
+					<div class="footer-text">
+						<p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+						<form action="#" method="post">
+							<input class="form-control" type="email" name="Email" placeholder="Enter your email..."
+								required="">
+							<button class="btn1">
+								<i class="far fa-envelope" aria-hidden="true"></i>
+							</button>
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-w3layouts mt-4">
+				<p class="copy-right text-center ">&copy; 2018 Goggles. All Rights Reserved | Design by
+					<a href="http://w3layouts.com/"> W3layouts </a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- //footer -->
+	<!--jQuery-->
+	<script src="assets/js/jquery-2.2.3.min.js"></script>
+	<!-- newsletter modal -->
+	<!--search jQuery-->
+	<script src="assets/js/modernizr-2.6.2.min.js"></script>
+	<script src="assets/js/classie-search.js"></script>
+	<script src="assets/js/demo1-search.js"></script>
+	<!--//search jQuery-->
+	<!-- cart-js -->
+	<script src="assets/js/minicart.js"></script>
+
+
+	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+	<script>
+		let orderId;
+
+		function checkPlaceOrder() {
+			const paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
+			console.log(paymentMethod)
+			if (paymentMethod == "Online Payment") {
+
+				const amount = document
+					.querySelector("#total")
+					.innerText.replace("₹", "");
+
+
+
+				setupRazorpay(orderId, amount);
+			} else {
+				placeOrder()
+			}
+
+
+
+		}
+
+		async function placeOrder() {
+			var form = document.getElementById('placeOrderForm');
+			form.submit();
+		}
+
+
+		function setupRazorpay(orderId, amount) {
+			console.log("setupRazorpay");
+			var options = {
+				key: "rzp_test_FKVTgS5xFRnfZn",
+				amount: amount * 100,
+				currency: "INR",
+				name: "Acme Corp",
+				description: "Test Transaction",
+				image: "https://example.com/your_logo",
+				order_id: orderId,
+				handler: async function (response) {
+					const paymentData = {
+						payment_id: response.razorpay_payment_id,
+						order_id: response.razorpay_order_id,
+						signature: response.razorpay_signature,
+					};
+					try {
+						console.log("verifyPayment");
+						const response = await fetch("/verify-payment", {
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify(paymentData),
+						});
+
+						if (response.ok) {
+							placeOrder()
+						}
+					} catch (error) {
+						console.log(error);
+					}
+				},
+				theme: {
+					color: "#3399cc",
+				},
+			};
+			var rzp1 = new Razorpay(options);
+
+			rzp1.on("payment.failed", function (response) {
+				alert(response.error.description);
+			});
+			rzp1.open(); // Open the Razorpay Checkout form immediately after creating the instance
+		}
+	</script>
+
+
+	<script>
+
+		async function createOrder() {
+			try {
+
+				const amount = document
+					.querySelector("#total")
+					.innerText.replace("₹", "");
+				const response = await fetch("/create/orderId", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({ amount }),
+					redirect: "follow",
+				});
+				const result = await response.json();
+
+				orderId = result.orderId;
+			} catch (error) {
+				console.log(error);
+			}
+		}
+
+	</script>
+
+
+
+	<script>
+		googles.render();
+
+		googles.cart.on('googles_checkout', function (evt) {
+			var items, len, i;
+
+			if (this.subtotal() > 0) {
+				items = this.items();
+
+				for (i = 0, len = items.length; i < len; i++) { }
+			}
+		});
+	</script>
+	<!-- //cart-js -->
+	<script>
+		$(document).ready(function () {
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+	</script>
+	<!-- carousel -->
+	<!-- easy-responsive-tabs -->
+	<script src="assets/js/easy-responsive-tabs.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true, // 100% fit in a container
+				closed: 'accordion', // Start closed if in accordion view
+				activate: function (event) { // Callback function if tab is switched
+					var $tab = $(this);
+					var $info = $('#tabInfo');
+					var $name = $('span', $info);
+					$name.text($tab.text());
+					$info.show();
+				}
+			});
+			$('#verticalTab').easyResponsiveTabs({
+				type: 'vertical',
+				width: 'auto',
+				fit: true
+			});
+		});
+	</script>
+	<!--quantity-->
+	<script>
+		$('.value-plus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) + 1;
+			divUpd.text(newVal);
+		});
+
+		$('.value-minus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) - 1;
+			if (newVal >= 1) divUpd.text(newVal);
+		});
+	</script>
+	<!--quantity-->
+	<!--close-->
+	<script>
+		$(document).ready(function (c) {
+			$('.close1').on('click', function (c) {
+				$('.rem1').fadeOut('slow', function (c) {
+					$('.rem1').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close2').on('click', function (c) {
+				$('.rem2').fadeOut('slow', function (c) {
+					$('.rem2').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close3').on('click', function (c) {
+				$('.rem3').fadeOut('slow', function (c) {
+					$('.rem3').remove();
+				});
+			});
+		});
+	</script>
+	<!--//close-->
+
+	<!-- dropdown nav -->
+	<script>
+		$(document).ready(function () {
+			$(".dropdown").hover(
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideDown("fast");
+					$(this).toggleClass('open');
+				},
+				function () {
+					$('.dropdown-menu', this).stop(true, true).slideUp("fast");
+					$(this).toggleClass('open');
+				}
+			);
+		});
+	</script>
+	<!-- //dropdown nav -->
+	<script src="assets/js/move-top.js"></script>
+	<script src="assets/js/easing.js"></script>
+	<script>
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 900);
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function () {
+			/*
+									var defaults = {
+										  containerID: 'toTop', // fading element id
+										containerHoverID: 'toTopHover', // fading element hover id
+										scrollSpeed: 1200,
+										easingType: 'linear' 
+									 };
+									*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!--// end-smoth-scrolling -->
+
+
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- js file -->
+</body>
+
+</html>
